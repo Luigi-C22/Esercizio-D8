@@ -7,19 +7,24 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 header{
-    position: sticky;
+    position: fixed;
+    width: 100%;
     box-shadow: gray;
 }
 div.container{
     display: flex;
+    margin-left: 70px;
+    margin-right: 30px;
 }
+/*dimensionamento del logo*/
 div.area-logo> img{
     width: 200px;
     padding: 10px;
+    margin-left: 70px;
     
 }
+
 div.navbar{
-    position: sticky;
     display: flex;
     min-height: 40px;
     background-color: aquamarine;
@@ -31,25 +36,31 @@ div.search-bar{
     width: 100px;
     height: auto;
 }
+/*impostazione dell'area sinistra*/
 div.articles-area{
+    margin-top: 70px;
     width: 66%;
     height: 100vh;
     background-color: yellow;
 }
-
+/*impostazione dell'area destra*/
 div.discover-area{
+    margin-top: 70px;
     width: 34%;
     height: 100vh;
     background-color: pink;
 }
-
+/*impostazioni della casella Membership*/
 #search{
+    text-align: center;
     width: 170px;
     height: 25px;
     border-radius: 30px;
     
 }
+/*impostazione della T su sfondo rosso*/
 #t-letter{
+    margin-right: 35px;
     text-align: center;
     padding: 5px;
     width: 25px;
@@ -57,4 +68,8 @@ div.discover-area{
     border-radius: 50%;
     background-color: red;
     color: white;
+}
+/*impostazioni dei riquiadri degli articoli*/
+.articles{
+
 }
