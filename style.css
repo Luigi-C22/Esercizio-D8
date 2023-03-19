@@ -43,7 +43,10 @@ div.search-bar{
 div.articles-area{
     width: 66%;
     height: 100vh;
-    background-color: yellow;
+    
+}
+.articles{
+    height: 300px;
 }
 div.choice{
     display: flex;
@@ -62,28 +65,47 @@ div.autore-titolo>img{
 div.autore-titolo{
     display: flex;
     align-items: center;
+   
+}
+div>h3{
+    color: lightgray;
+    font-weight: 100;
 }
 .lista-allin{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
+    padding-right: 300px;
     color: lightgrey;
-    list-style-type: none;
 }
 .bordo{
-    padding: 10px;
+    width: fit-content;
+    padding: 5px;
     background-color: rgb(190, 187, 187);
     border-radius: 20px;
     color: rgb(50, 49, 49);
 }
-
-/*impostazione dell'area destra*/
-div.discover-area{
-    width: 34%;
-    height: 100vh;
-    background-color: pink;
+.titoli{
+    width: 70%;
+    padding-right: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+.dim-img{
+    padding: 20px;
+    width: 280px;
+
+}
+div.image-right{
+    display: flex;
+    align-content: space-between;    
+}
+div.lista-allin>span{
+    font-size: 13px;
+}
+
+
 .select-choice-hover:hover{
     color: black;
     border-bottom: solid 1px black;
@@ -112,4 +134,115 @@ div.discover-area{
     display: flex;
     align-items: center;
 
+}
+/*impostazione dell'area destra*/
+div.discover-area{
+    width: 34%;
+    height: 100vh;
+    background-color: pink;
+}
+.discover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;  
+    border-bottom: solid 1px lightgrey;
+}
+.loghi{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+}
+h5{
+    font-size: 15px;
+    font-weight: 100;
+    color: lightgray;
+    text-align: center;
+    margin-top: 20px;
+}
+#connect{
+    border: solid 1px lightgrey;
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px;
+    width: 200px;
+    height: 35px;
+    border-radius: 30px;
+    color: gray;
+}
+.later{
+    margin-top: 20px;
+    color: lightgrey;
+}
+div.later>a{
+    color: lightgrey;
+    font-size: 12px;
+    font-weight: 200;
+}
+.recommended-area{
+    width: 75%;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;  
+}
+.recomm-cont{
+    display: flex;
+    flex-wrap: wrap;
+}
+.recommended{
+    width: fit-content;
+    padding: 10px;
+    background-color: lightgrey;
+    border-radius: 40px;
+    margin: 5px;
+    font-size: 12px;
+    font-weight: 100;
+}
+.who-follow{
+    width: 75%;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+div.small-pic>img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+ } 
+.follow-cont{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+
+}
+.name-follow{
+    margin: 10px;
+}
+div.name-follow>span{
+    font-weight: 200;
+    color: black;
+} 
+
+/*elimina sottolineatura solo nel footer*/
+div.footer>a{
+    text-decoration: none;
+    color: rgb(156, 155, 155);
+}
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 80%;
+   
+}
+.footer{
+    align-content: flex-start;
+    padding: 5px;
+    
 }
