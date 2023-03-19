@@ -8,8 +8,9 @@ body{
 }
 header{
     position: fixed;
+    text-align: right;
     width: 100%;
-    box-shadow: gray;
+    box-shadow: 0px 5px 20px gray;
 }
 div.container{
     display: flex;
@@ -31,29 +32,66 @@ div.navbar{
     justify-content: space-between;
     
 }
-
-div.search-bar{
+main{
+    padding-top: 90px;
+}
+div.search-bar{ 
     width: 100px;
     height: auto;
 }
 /*impostazione dell'area sinistra*/
 div.articles-area{
-    margin-top: 70px;
     width: 66%;
     height: 100vh;
     background-color: yellow;
 }
+div.choice{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    border-bottom: solid 1px grey;
+    margin-bottom: 80px;
+    height: 10px;
+    font-weight: bold;
+    color: lightgray;
+}
+div.autore-titolo>img{
+    border-radius: 50%;
+    width: 20px;
+}
+div.autore-titolo{
+    display: flex;
+    align-items: center;
+}
+.lista-allin{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    color: lightgrey;
+    list-style-type: none;
+}
+.bordo{
+    padding: 10px;
+    background-color: rgb(190, 187, 187);
+    border-radius: 20px;
+    color: rgb(50, 49, 49);
+}
+
 /*impostazione dell'area destra*/
 div.discover-area{
-    margin-top: 70px;
     width: 34%;
     height: 100vh;
     background-color: pink;
 }
+.select-choice-hover:hover{
+    color: black;
+    border-bottom: solid 1px black;
+}
 /*impostazioni della casella Membership*/
-#search{
+#member{
     text-align: center;
-    width: 170px;
+    width: 160px;
     height: 25px;
     border-radius: 30px;
     
@@ -70,6 +108,8 @@ div.discover-area{
     color: white;
 }
 /*impostazioni dei riquiadri degli articoli*/
-.articles{
+#icone{
+    display: flex;
+    align-items: center;
 
 }
