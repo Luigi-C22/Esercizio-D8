@@ -28,7 +28,7 @@ div.area-logo> img{
 div.navbar{
     display: flex;
     min-height: 40px;
-    background-color: aquamarine;
+    background-color: white;
     justify-content: space-between;
     
 }
@@ -139,7 +139,6 @@ div.lista-allin>span{
 div.discover-area{
     width: 34%;
     height: 100vh;
-    background-color: pink;
 }
 .discover{
     display: flex;
@@ -203,6 +202,8 @@ div.later>a{
     font-weight: 100;
 }
 .who-follow{
+    display: flex;
+    flex-direction: column;
     width: 75%;
     padding: 20px;
     margin-left: 20px;
@@ -216,18 +217,41 @@ div.small-pic>img{
  } 
 .follow-cont{
     display: flex;
-    align-content: center;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
     
 
 }
-.name-follow{
+div.name-follow>span{
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
     margin: 10px;
 }
-div.name-follow>span{
+div.name-follow>h6{
+    margin-left: 10px;
     font-weight: 200;
-    color: black;
-} 
+    color: gray;
+}
+div.follow>button{
+    margin-left: 30px;
+    font-size: 10px;
+    color: gray;
+    border: solid 1px gray;
+    padding: 5px;
+    border-radius: 40px;
+}
+.recently-saved{
+    margin: 40px;
+    display: flex;
+
+}
+div.recently-saved>h6{
+    display: flex;
+    align-items: flex-start;
+    font-size: 9px;
+    color: grey;
+}
 
 /*elimina sottolineatura solo nel footer*/
 div.footer>a{
